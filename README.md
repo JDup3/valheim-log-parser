@@ -19,6 +19,7 @@ This is a python log parser designed for Valheim server logs, which tracks the s
 
 ## Usage
 ### Windows
+- Prerequisites: Python 3.8 installed (this can be done through the Microsoft Store), and the `requests` python library must be installed via `pip install requests` through a terminal
 1. Add the `parser.py` and `sample_bat.bat` files to your valheim server directory
 2. The existing `start_headless_server.bat` will need to be updated with `sample_bat.bat`, so update the `sample_bat.bat` with the appropriate:
     - `SERVER_PORT`: The port that the server will be exposed on
