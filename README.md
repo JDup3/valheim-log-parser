@@ -30,3 +30,10 @@ This is a python log parser designed for Valheim server logs, which tracks the s
 3. Replace `start_headless_server.bat` with the newly updated `sample_bat.bat` (you can save a copy of it just in case)
     - **NOTE**: This new BAT will contact opendns for your external IP which others can use to connect to your server on the specified port.
 4. Run the server as usual!
+
+### Linux + Docker
+My preferred way of running a valheim server is with [`valheim-server-docker`](https://github.com/lloesche/valheim-server-docker). The ideal approach would be to update the docker container to include this parser internally, but I went with a lazy approach. Instead, I chose to pipe the docker output to the parser.
+- Prerequisites:
+    - Python 3.8 installed and the `requests` python library must be installed via `pip install requests`
+    - `docker` and `docker-compose`
+1. running `run-server.sh` should be all thats required. Just be sure to update the variables for your server
